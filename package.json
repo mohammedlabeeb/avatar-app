@@ -1,0 +1,26 @@
+{
+  "name": "avatar-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammedlabeeb/avatar-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammedlabeeb/avatar-app/issues"
+  },
+  "homepage": "https://github.com/mohammedlabeeb/avatar-app#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

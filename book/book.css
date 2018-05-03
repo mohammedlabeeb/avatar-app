@@ -1,0 +1,100 @@
+#test-frame {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+}
+
+#test-frame .list {
+    list-style: none;
+    min-width: 250px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-right: 1px solid #ccc;
+}
+
+#test-frame .list .item {
+    padding: 7px 15px;
+    border-bottom: 1px solid #ccc;
+    flex: 1 auto;
+}
+
+#test-frame .list .item:last-child {
+    border: none;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.species {
+    font-size: 12px;
+    padding-left: 10px;
+    color: #333;
+}
+
+#test-frame .details {
+    min-width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+#test-frame .details .thumb {
+    max-width: 175px;
+    margin: 0 auto;
+}
+
+#test-frame .details .thumb img {
+    max-width: 100%;
+}
+
+#test-frame .details .char-info {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#test-frame .details .description {
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+#test-frame .details .edit {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+#test-frame .details .editor {
+    position: absolute;
+    top: -3000px;
+    background: #ccc;
+    min-width: 100%;
+    height: 100%;
+    padding: 25px;
+    transition: top 1s;
+}
+
+#test-frame .details .editor.active {
+    top: 0;
+}
+
+#test-frame .details .editor .form-control {
+    width: 100%;
+    padding: 5px 7px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form-control input[type='text'],
+.form-control textarea {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-control textarea {
+    min-height: 100px;
+}
